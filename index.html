@@ -21,18 +21,18 @@
       </script>
 </head>
 <body>
-    <header class="w-3/4 mx-auto my-6">
+    <header class="w-11/12 m-auto lg:w-3/4 mx-auto my-6 bg-[#FFFFFF]">
         <nav class="flex justify-between">
-            <div><i class="fa-solid fa-arrow-right text-2xl bg-green-500 rounded-full px-5 py-3 gap-1 font-medium"></i><h1 class="text-3xl font-extrabold"></h1>Rinterio</h1></div>
-            <div><i class="fa-solid fa-bars text-xl px-4 py-2 rounded-full bg-gray-500"></i></div>
+            <div class="flex flex-row gap-1"><div class="grid items-center"><i class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-green-500 px-[6px] py-[1px] grid items-center justify-center "></i></div><h1 class="text-3xl font-extrabold"><h1 class="font-extrabold text-3xl">Rinterio</h1></div>
+            <div><i class="fa-solid fa-bars text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
 
         </nav>
         <div class="text-center">
-            <div><img class="w-1/2 mx-auto" src="B10-Assignment-03-main/assets/banner.png" alt=""></div>
-            <div>
-                <h1>A barn house of this design  has a striking appearance</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button class="btn btn-wide rounded-full lg:btn btn-secondary"> View Details <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="mt-8"><img class="w-3/4 mx-auto lg:w-3/5" src="B10-Assignment-03-main/assets/banner.png" alt=""></div>
+            <div class="mt-8">
+                <h1 class="text-3xl font-extrabold">A barn house of this design  has a striking appearance</h1>
+                <p class="mt-7 text-sm font-semibold lg:w-3/4 m-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="btn btn-wide rounded-full lg:btn btn-secondary mt-6"> View Details <i class="fa-solid fa-arrow-right"></i></button>
 
             </div>
         </div>
@@ -123,10 +123,32 @@
 
       </section>
 
+
+      <section class="bg-cover bg-center h-screen " 
+      style="background-image: url('B10-Assignment-03-main/assets/bg.jpg');">
+      <div class="grid justify-center">
+        <button class="btn btn-primary rounded-full bg-white border-none text-black text-center "><i class="fa-solid fa-arrow-right"></i>Let's Connect</button>
+      </div>
+      <div class="text-center -mb-10">
+        <h1 class="text-4xl mb-4">Let's Discuss Next Project</h1>
+        <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatibus.</p>
+      </div>
+      <div class="lg:grid grid-cols-2 w-3/4 m-auto mt-20 gap-6">
+        <div><input type="text" placeholder="First Name" class="input input-bordered w-full max-w-xs rounded-full" /></div>
+        <div class="lg:ml-4"><input type="text" placeholder="Last Name" class="input input-bordered w-full max-w-xs rounded-full" /></div>
+        <div><input type="text" placeholder="Phone Nubmer" class="input input-bordered w-full max-w-xs rounded-full" /></div>
+        <div class="lg:ml-4 w-full"><input type="text" placeholder="Email Number" class="input input-bordered w-full max-w-xs rounded-full" /><br></div>
+        <div class="grid grid-subgid col-span-2">
+        <textarea class="textarea textarea-bordered rounded-lg max-h-full" placeholder="Write your massage here"></textarea>
+        </div>
+      </div>
+
+      </section>
+
     </main>
     <footer class="footer footer-center bg-black text-white text-base-content rounded p-10">
 
-      <h1 class="text-3xl font-extrabold"><i class="fa-solid fa-arrow-right text-2xl bg-green-500 rounded-full px-5 py-3 gap-1 font-medium"></i>Rinterio</h1>
+      <div class="flex"><i class="fa-solid fa-arrow-right text-2xl text-black bg-green-500 rounded-full -rotate-45 px-[9px] py-1 gap-1"></i><h1 class="text-5xl font-extrabold">Rinterio</h1></div>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, possimus?</p>
 
       <nav class="grid grid-flow-row gap-10 lg:grid-flow-col">
