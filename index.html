@@ -1,230 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    <script src="https://kit.fontawesome.com/8898c03df7.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <script src="https://kit.fontawesome.com/8898c03df7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
+
 <body>
-    <header class="w-11/12 m-auto lg:w-3/4 mx-auto my-6 bg-[#FFFFFF]">
-        <nav class="flex justify-between">
-            <div class="flex flex-row gap-1"><div class="grid items-center"><i class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-[#ABEF5F] px-[6px] py-[1px] grid items-center justify-center "></i></div><h1 class="text-3xl font-extrabold"><h1 class="font-extrabold text-3xl">Rinterio</h1></div>
-            <div><i class="fa-solid fa-bars text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
 
-        </nav>
-        <div class="text-center">
-            <div class="mt-8"><img class="w-3/4 mx-auto lg:w-3/5" src="B10-Assignment-03-main/assets/banner.png" alt=""></div>
-            <div class="mt-8">
-                <h1 class="text-3xl font-extrabold">A barn house of this design  has a striking appearance</h1>
-                <p class="mt-7 text-lg font-medium lg:w-3/4 m-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button class="btn btn-wide border-none text-black bg-[#ABEF5F] rounded-full lg:btn btn-secondary mt-6"> View Details <i class="fa-solid fa-arrow-right"></i></button>
+  <header class="w-11/12 m-auto lg:w-3/4 mx-auto my-6 bg-[#FFFFFF]">
 
-            </div>
+    <!-- Navbar -->
+    <nav>
+      <div class="flex justify-between">
+      <div class="flex flex-row gap-1">
+        <div class="grid items-center"><i
+            class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-[#ABEF5F] px-[6px] py-[1px] grid items-center justify-center "></i>
         </div>
+        <h1 class="text-3xl font-extrabold">
+          <h1 class="font-extrabold text-3xl">Rinterio</h1>
+      </div>
+      <div class="flex gap-4">
+        <div class="hidden lg:inline"><i class="fa-solid fa-magnifying-glass text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
+        <div class="hidden lg:inline"><i class="fa-solid fa-cart-shopping text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
+        <div class="hidden lg:inline"><button class="btn btn-primary text-lg text-black font-semibold rounded-full px-5 bg-[#ABEF5F] border-none">Book Consult<i
+          class="fa-solid fa-arrow-right text-white -rotate-45 text-sm rounded-full py-1 px-2 bg-black"></i></button></div>
+        <div><i class="fa-solid fa-bars text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
+      </div>
+    </div>
+    </nav>
 
-    </header>
-    <main>
-      <section class="bg-base-200">
-        <div class="hero min-h-screen ">
-          <div class="hero-content flex-col m-auto lg:flex-row w-4/5">
-            
-            <div>
-              <button class="btn btn-primary rounded-full bg-white border-none text-black text-center"><i class="fa-solid fa-arrow-right"></i>About Us</button>
-              <h1 class="py-4 text-4xl font-bold lg:mr-3 mt-3 mb-2">We design thoughtful, liveable spaces</h1>
-              <p class="font-medium text-lg lg:py-2 mr-3">
+    <!-- Banner -->
+    <div class="text-center">
+      <div class="mt-8"><img class="w-3/4 mx-auto lg:w-3/5" src="B10-Assignment-03-main/assets/banner.png" alt=""></div>
+      <div class="mt-8">
+        <h1 class="text-3xl font-extrabold">A barn house of this design has a striking appearance</h1>
+        <p class="mt-7 text-lg font-medium lg:w-3/4 m-auto">The barn house captivates with its blend of rustic charm and
+          modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space
+          with natural light.</p>
+        <button class="btn btn-wide border-none text-lg font-semibold mt-3 text-black bg-[#ABEF5F] rounded-full"> View
+          Details<i
+            class="fa-solid fa-arrow-right text-white -rotate-45 text-sm rounded-full py-1 px-2 bg-black"></i></button>
+      </div>
+    </div>
+
+  </header>
+  <main>
+
+    <!-- Section 1  -->
+    <section class="bg-base-200">
+
+      <div class="grid justify-center pb-2 pt-4 lg:hidden">
+        <button class="btn btn-primary hover:bg-slate-400 rounded-full bg-white border-none text-black text-center"><i
+            class="fa-solid fa-arrow-right"></i>About Us</button>
+      </div>
+
+
+      <div class="hero-content m-auto pb-6 pt-6 lg: w-4/5">
+
+
+        <div class="flex flex-col lg:flex-row">
+          <div>
+
+            <div class="hidden lg:grid justify-start">
+              <button
+                class="btn btn-primary hover:bg-slate-300 rounded-full bg-white border-none text-black text-center"><i
+                  class="fa-solid fa-arrow-right"></i>About Us</button>
+            </div>
+
+            <div class="text-center lg:text-start">
+              <h1 class="py-3 text-4xl font-bold lg:mr-3 mt-2">We design thoughtful, liveable spaces</h1>
+              <p class="font-medium text-lg mb-2 lg:py-2 mr-3">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                 quasi. In deleniti eaque aut repudiandae et a id nisi.
               </p>
-
-
-              <div class="card card-side bg-base-100 px-3 py-0 mb-3 mr-3">
-                <figure>
-                  <img class="w-full"
-                    src="B10-Assignment-03-main/assets/commercial.png"
-                    alt="Commercial" />
-                </figure>
-                <div class="card-body w-10/12">
-                  <h2 class="card-title text-xl font-semibold">Commercial</h2>
-                  <p class="text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
-                  <div class="card-actions justify-end">
-                  </div>
-                </div>
-              </div>
-              <div class="card card-side bg-base-100 px-3 py-0 mr-3">
-                <figure>
-                  <img class="w-full"
-                    src="B10-Assignment-03-main/assets/residential.png"
-                    alt="Residential" />
-                </figure>
-                <div class="card-body w-10/12">
-                  <h2 class="card-title text-xl font-semibold">Residential</h2>
-                  <p class="text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
-                  <div class="card-actions justify-end">
-                  </div>
-                </div>
-                <div>
-                </div>
-              </div>
-
             </div>
-            <img
-              src="B10-Assignment-03-main/assets/Rectangle.png"
-              class="w-full h-full rounded-lg" />
-              
-          </div>
-        </div>
-      </section>
 
+            <div class="card card-side bg-base-100 px-3 py-0 mb-2 mr-3">
+              <figure>
+                <img class="w-full" src="B10-Assignment-03-main/assets/commercial.png" alt="Commercial" />
+              </figure>
+              <div class="card-body w-10/12">
+                <h2 class="card-title text-xl font-semibold">Commercial</h2>
+                <p class="text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                <div class="card-actions justify-end">
+                </div>
+              </div>
+            </div>
 
-      <section class="m-auto mb-17 bg-base-200">
-        <div class="grid justify-center">
-        <button class="btn btn-primary rounded-full bg-white border-none text-black text-center mb-5 "><i class="fa-solid fa-arrow-right"></i>About Us</button>
-        </div>
-        <h1 class="text-center text-4xl font-extrabold mb-4">Our Works Process</h1>
-        <p class="text-center text-lg font-medium mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, excepturi.</p>
-        <div class="grid grid-cols-1 gap-5 lg:grid-cols-4 gap-10px w-4/5 m-auto mb-5">
-          <div class="p-5 bg-[#E7C1D3] rounded-2xl mb-8">
-            <img src="B10-Assignment-03-main/assets/concept.png" alt="" class="mb-2.5">
-            <h1 class="text-2xl mb-2 font-semibold">Concept</h1>
-            <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, voluptates. Labore esse mollitia modi nulla itaque, omnis veritatis aspernatur debitis!</p>
+            <div class="card card-side bg-base-100 px-3 py-0 mr-3 mb-[10px]">
+              <figure>
+                <img class="w-full" src="B10-Assignment-03-main/assets/residential.png" alt="Residential" />
+              </figure>
+              <div class="card-body w-10/12">
+                <h2 class="card-title text-xl font-semibold">Residential</h2>
+                <p class="text-lg font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+                <div class="card-actions justify-end">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="p-5 bg-[#EFDA6E] rounded-2xl mb-8">
-            <img src="B10-Assignment-03-main/assets/flow-chart.png" alt="" class="mb-2.5">
-            <h1 class="text-2xl mb-2 font-semibold">Design Process</h1>
-            <p class="text-sm font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque neque qui veritatis officia mollitia, sed consequatur earum perspiciatis laborum.</p>
-          </div>
-          <div class="p-5 bg-[#A4DAC3] rounded-2xl mb-8">
-            <img src="B10-Assignment-03-main/assets/vision.png" alt="" class="mb-2.5">
-            <h1 class="text-2xl mb-2 font-semibold">Supervision</h1>
-            <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit at itaque sint facere, amet deleniti laboriosam neque enim suscipit?</p>
-          </div>
-          <div class="p-5 bg-[#77AAEA] rounded-2xl mb-8">
-            <img src="B10-Assignment-03-main/assets/budget-planning.png" alt="" class="mb-2.5">
-            <h1 class="text-2xl mb-2 font-semibold">Budget Planning</h1>
-            <p class="text-sm font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa sed voluptatum quod iure nesciunt maxime ducimus odit aspernatur iste ex?</p>
+
+          <div class="w-full mb-[10px]">
+            <img src="B10-Assignment-03-main/assets/Rectangle.png" class="w-full h-full rounded-lg" />
           </div>
         </div>
 
-      </section>
-      <section class="bg-base-200">
-        <div class="grid justify-center">
-          <button class="btn btn-wide border-none rounded-none">Wide</button>
-        </div>
-        <div class="text-center">
-          <h1 class="text-4xl font-extrabold">Our Letest Portfolio</h1>
-          <p class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsum.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="bg-base-200">
+
+      <div class="grid justify-center pt-6">
+        <button class="btn btn-wide rounded-full bg-white border-none text-black text-center mb-5 "><i
+            class="fa-solid fa-arrow-right"></i>How We Works</button>
+      </div>
+
+      <h1 class="text-center text-4xl font-extrabold mb-4">Our Works Process</h1>
+      <p class="text-center text-lg font-medium mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+        excepturi.</p>
+
+      <div class="grid grid-cols-1 gap-3 pb-5 lg:grid-cols-4 w-4/5 m-auto">
+
+        <div class="p-5 bg-[#E7C1D3] rounded-2xl mb-2">
+          <img src="B10-Assignment-03-main/assets/concept.png" alt="" class="mb-2.5">
+          <h1 class="text-2xl mb-2 font-semibold">Concept</h1>
+          <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
+            voluptates. Labore esse mollitia modi nulla itaque, omnis veritatis aspernatur debitis!</p>
         </div>
 
+        <div class="p-5 bg-[#EFDA6E] rounded-2xl mb-2">
+          <img src="B10-Assignment-03-main/assets/flow-chart.png" alt="" class="mb-2.5">
+          <h1 class="text-2xl mb-2 font-semibold">Design Process</h1>
+          <p class="text-sm font-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit cumque neque
+            qui veritatis officia mollitia, sed consequatur earum perspiciatis laborum.</p>
+        </div>
 
-        <div class="first-line lg:grid grid-cols-3 gap-2 w-11/12 m-auto">
-          <div class="p-2 rounded-xl bg-white lg:grid grid-subgrid col-span-2">
+        <div class="p-5 bg-[#A4DAC3] rounded-2xl mb-2">
+          <img src="B10-Assignment-03-main/assets/vision.png" alt="" class="mb-2.5">
+          <h1 class="text-2xl mb-2 font-semibold">Supervision</h1>
+          <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et impedit at itaque
+            sint facere, amet deleniti laboriosam neque enim suscipit?</p>
+        </div>
+
+        <div class="p-5 bg-[#77AAEA] rounded-2xl mb-2">
+          <img src="B10-Assignment-03-main/assets/budget-planning.png" alt="" class="mb-2.5">
+          <h1 class="text-2xl mb-2 font-semibold">Budget Planning</h1>
+          <p class="text-sm font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa sed voluptatum
+            quod iure nesciunt maxime ducimus odit aspernatur iste ex?</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="bg-base-200">
+
+      <!-- Section 3  -->
+      <div class="grid justify-center">
+        <button class="btn btn-wide border-none rounded-full bg-[#acef5f6d] my-5"><i
+            class="fa-solid fa-arrow-right"></i>Explore Our Letest Works</button>
+      </div>
+
+      <div class="text-center mb-6 w-3/4 m-auto">
+        <h1 class="text-4xl font-extrabold mb-2">Our Letest Portfolio</h1>
+        <p class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsum.</p>
+      </div>
+
+
+      <div class="first-line lg:grid grid-cols-3 gap-4 w-11/12 m-auto">
+        <div class="p-2 mb-2 rounded-xl bg-white lg:grid grid-subgrid col-span-2">
           <div class="bg-base-100 p-2 flex flex-col lg:flex-row">
             <div>
-              <img class="p-2 w-full"
-                src="B10-Assignment-03-main/assets/img1.png"
-                alt="Movie" />
+              <img class="p-2 w-full h-full" src="B10-Assignment-03-main/assets/img1.png" alt="Movie" />
             </div>
-            <div>
-              <h2 class="card-title">New movie is released!</h2>
+            <div class="text-center">
+              <h2 class="card-title justify-center lg:justify-start">New movie is released!</h2>
               <p>Click the button to watch on Jetflix app.</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Watch</button>
+              <div class="card-actions grid justify-center lg:justify-start">
+                <button
+                  class="btn btn-primary border-none text-black bg-[#ABEF5F] hover:bg-slate-300 rounded-full">Watch</button>
               </div>
             </div>
           </div>
-          </div>
-          <div class="p-2 rounded-xl bg-white">
-            <img class="p-2 w-full" src="B10-Assignment-03-main/assets/img2.png" alt="">
-          </div>
         </div>
+        <div class="p-2 mb-2 rounded-xl bg-white">
+          <img class="p-2 w-full" src="B10-Assignment-03-main/assets/img2.png" alt="">
+        </div>
+      </div>
 
 
-        <div class="lg:grid grid-cols-4 gap-2 w-11/12 m-auto mt-2">
-          <div class="p-2 bg-white rounded-xl">
-            <img class="p-2 w-full" src="B10-Assignment-03-main/assets/img3.png" alt="">
-          </div>
-          <div class="p-2 rounded-xl bg-white marker lg:grid grid-subgrid col-span-2">
-            <div class="bg-base-100 p-2 flex flex-col lg:flex-row">
-              <div>
-                <img class="p-2 w-full"
-                  src="B10-Assignment-03-main/assets/img4.png"
-                  alt="" />
-              </div>
-              <div>
-                <h2 class="card-title">New movie is released!</h2>
-                <p>Click the button to watch on Jetflix app.</p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">Watch</button>
-                </div>
+      <div class="pb-6 lg:grid grid-cols-4 gap-2 w-11/12 m-auto mt-2">
+        <div class="p-2 mb-5 bg-white rounded-xl">
+          <img class="p-2 w-full" src="B10-Assignment-03-main/assets/img3.png" alt="">
+        </div>
+        <div class="p-2 rounded-xl mb-5 bg-white marker lg:grid grid-subgrid col-span-2">
+          <div class="bg-base-100 p-2 flex flex-col lg:flex-row">
+            <div>
+              <img class="p-2 w-full h-full" src="B10-Assignment-03-main/assets/img4.png" alt="" />
+            </div>
+            <div class="text-center">
+              <h2 class="card-title justify-center lg:justify-start">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="card-actions grid justify-center lg:justify-start">
+                <button
+                  class="btn btn-primary text-black border-none bg-[#ABEF5F] rounded-full hover:bg-slate-300">Watch</button>
               </div>
             </div>
           </div>
-          <div class="p-2 rounded-xl bg-white">
-            <img class="p-2 w-full" src="B10-Assignment-03-main/assets/img5.png" alt="">
-          </div>
         </div>
-         
-      </section>
 
+        <div class="p-2 rounded-xl bg-white mb-5">
+          <img class="p-2 w-full" src="B10-Assignment-03-main/assets/img5.png" alt="">
+        </div>
 
-      <section class="bg-cover bg-center w-full" 
-      style="background-image: url('B10-Assignment-03-main/assets/bg.jpg');">
+      </div>
+
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-cover bg-center w-full" style="background-image: url('B10-Assignment-03-main/assets/bg.jpg');">
+
       <div class="flex flex-col justify-center items-cente gap-5">
-      <div class="grid justify-center mt-4">
-        <button class="btn btn-primary rounded-full bg-[#acef5f6d] border-none text-black text-center "><i class="fa-solid fa-arrow-right"></i>Let's Connect</button>
-      </div>
-      <div class="text-center -mb-10">
-        <h1 class="text-4xl font-extrabold mb-4">Let's Discuss Next Project</h1>
-        <p class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatibus.</p>
-      </div>
-      <div class="flex flex-col gap-3 lg:grid grid-cols-2 w-8/12 m-auto mt-20 gap-6">
-        <div><input type="text" placeholder="First Name" class="input input-bordered w-full rounded-full" /></div>
-        <div class="lg:ml-4"><input type="text" placeholder="Last Name" class="input input-bordered w-full rounded-full" /></div>
-        <div><input type="text" placeholder="Phone Nubmer" class="input input-bordered w-full rounded-full" /></div>
-        <div class="lg:ml-4"><input type="email" placeholder="Email Number" class="input input-bordered w-full rounded-full" /><br></div>
-        <div class="grid grid-subgrid col-span-2">
-        <textarea class="textarea textarea-bordered rounded-lg max-h-full" placeholder="Write your massage here"></textarea>
+
+        <div class="grid justify-center mt-4">
+          <button class="btn btn-wide rounded-full bg-[#acef5f6d] border-none text-black text-center "><i
+              class="fa-solid fa-arrow-right"></i>Let's Connect</button>
         </div>
-        <div class="grid grid-subgrid col-span-2 mb-4">
-          <button class="btn btn-wide w-full rounded-full border-none bg-[#ABEF5F]">Send Mail</button>
+
+        <div class="text-center -mb-10">
+          <h1 class="text-4xl font-extrabold mb-4">Let's Discuss Next Project</h1>
+          <p class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatibus.
+          </p>
         </div>
+
+        <div class="flex flex-col gap-3 lg:grid grid-cols-2 w-8/12 m-auto mt-20 gap-6">
+          <div><input type="text" placeholder="First Name" class="input input-bordered w-full rounded-full" /></div>
+          <div class="lg:ml-4"><input type="text" placeholder="Last Name"
+              class="input input-bordered w-full rounded-full" /></div>
+          <div><input type="text" placeholder="Phone Nubmer" class="input input-bordered w-full rounded-full" /></div>
+          <div class="lg:ml-4"><input type="email" placeholder="Email Number"
+              class="input input-bordered w-full rounded-full" /><br></div>
+          <div class="grid grid-subgrid col-span-2">
+            <textarea class="textarea textarea-bordered rounded-lg max-h-full"
+              placeholder="Write your massage here"></textarea>
+          </div>
+          <div class="grid grid-subgrid col-span-2 mb-4">
+            <button class="btn btn-wide w-full font-semibold text-lg rounded-full border-none bg-[#ABEF5F]">Send Mail<i
+                class="fa-solid fa-arrow-right text-white -rotate-45 text-sm rounded-full py-1 px-2 bg-black"></i></button>
+          </div>
+        </div>
+
       </div>
-      </div>
 
-      </section>
+    </section>
 
-    </main>
-    <footer class="footer footer-center bg-black text-white text-base-content rounded p-10">
+  </main>
 
-      <div class="flex"><i class="fa-solid fa-arrow-right text-2xl text-black bg-green-500 rounded-full -rotate-45 px-[9px] py-1 gap-1"></i><h1 class="text-5xl font-extrabold">Rinterio</h1></div>
-      <p class="text-lg font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, possimus?</p>
 
-      <nav class="grid grid-flow-row gap-10 lg:grid-flow-col font-medium text-lg">
-        <a class="link link-hover">Home</a>
-        <a class="link link-hover">Services</a>
-        <a class="link link-hover">Portfolio</a>
-        <a class="link link-hover">Blogs</a>
-        <a class="link link-hover">Contact Us</a>
-      </nav>
-      <button class="btn btn-wide rounded-full px-5 bg-[#ABEF5F] border-none">Book Consult <i class="fa-solid fa-arrow-right"></i> </button>
-    </footer>
-    
-    
+  <footer class="footer footer-center bg-black text-white text-base-content rounded p-10">
+
+    <div class="flex"><i
+        class="fa-solid fa-arrow-right text-2xl text-black bg-green-500 rounded-full -rotate-45 px-[9px] py-1 gap-1"></i>
+      <h1 class="text-5xl font-extrabold">Rinterio</h1>
+    </div>
+
+    <p class="text-lg font-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, possimus?</p>
+
+    <nav class="grid grid-flow-row gap-10 lg:grid-flow-col font-medium text-lg">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Services</a>
+      <a class="link link-hover">Portfolio</a>
+      <a class="link link-hover">Blogs</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    <div>
+      <button class="btn btn-wide text-lg font-semibold rounded-full px-5 bg-[#ABEF5F] border-none">Book Consult<i
+          class="fa-solid fa-arrow-right text-white -rotate-45 text-sm rounded-full py-1 px-2 bg-black"></i></button>
+    </div>
+
+  </footer>
+
+
 
 </body>
+
 </html>
