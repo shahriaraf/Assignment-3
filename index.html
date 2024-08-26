@@ -8,6 +8,9 @@
   <script src="https://kit.fontawesome.com/8898c03df7.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
@@ -20,30 +23,45 @@
       }
     }
   </script>
+
+
+  <style>
+    .manrope-uniquifier> {
+      font-family: "Manrope", system-ui;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
 </head>
 
-<body>
+<body class="manrope-uniquifier">
 
   <header class="w-11/12 m-auto lg:w-3/4 mx-auto my-6 bg-[#FFFFFF]">
 
     <!-- Navbar -->
     <nav>
       <div class="flex justify-between">
-      <div class="flex flex-row gap-1">
-        <div class="grid items-center"><i
-            class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-[#ABEF5F] px-[6px] py-[1px] grid items-center justify-center "></i>
+        <div class="flex flex-row gap-1">
+          <div class="grid items-center"><i
+              class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full bg-[#ABEF5F] px-[6px] py-[1px] grid items-center justify-center "></i>
+          </div>
+          <h1 class="text-3xl font-extrabold">
+            <h1 class="font-extrabold text-3xl">Rinterio</h1>
         </div>
-        <h1 class="text-3xl font-extrabold">
-          <h1 class="font-extrabold text-3xl">Rinterio</h1>
+        <div class="flex gap-4">
+          <div class="hidden lg:inline"><i
+              class="fa-solid fa-magnifying-glass text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
+          <div class="hidden lg:inline"><i
+              class="fa-solid fa-cart-shopping text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
+          <div class="hidden lg:inline"><button
+              class="btn btn-primary text-lg text-black font-semibold rounded-full px-5 bg-[#ABEF5F] border-none">Book
+              Consult<i
+                class="fa-solid fa-arrow-right text-white -rotate-45 text-sm rounded-full py-1 px-2 bg-black"></i></button>
+          </div>
+          <div><i class="fa-solid fa-bars text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
+        </div>
       </div>
-      <div class="flex gap-4">
-        <div class="hidden lg:inline"><i class="fa-solid fa-magnifying-glass text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
-        <div class="hidden lg:inline"><i class="fa-solid fa-cart-shopping text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
-        <div class="hidden lg:inline"><button class="btn btn-primary text-lg text-black font-semibold rounded-full px-5 bg-[#ABEF5F] border-none">Book Consult<i
-          class="fa-solid fa-arrow-right text-white -rotate-45 text-sm rounded-full py-1 px-2 bg-black"></i></button></div>
-        <div><i class="fa-solid fa-bars text-xl px-4 py-2 rounded-full bg-base-200"></i></div>
-      </div>
-    </div>
     </nav>
 
     <!-- Banner -->
@@ -64,15 +82,19 @@
   <main>
 
     <!-- Section 1  -->
-    <section class="bg-base-200">
+    <section class="bg-base-200 relative">
 
       <div class="grid justify-center pb-2 pt-4 lg:hidden">
         <button class="btn btn-primary hover:bg-slate-400 rounded-full bg-white border-none text-black text-center"><i
             class="fa-solid fa-arrow-right"></i>About Us</button>
       </div>
 
+      <div class="hidden lg:inline"><img class="lg:absolute top-4 left-10"
+          src="B10-Assignment-03-main/assets/Vector.png" alt=""></div>
 
-      <div class="hero-content m-auto pb-6 pt-6 lg: w-4/5">
+
+
+      <div class="hero-content m-auto pt-2 lg:w-4/5 lg:pt-20">
 
 
         <div class="flex flex-col lg:flex-row">
